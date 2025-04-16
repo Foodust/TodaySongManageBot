@@ -1,4 +1,5 @@
 // 필요한 Discord.js 클래스 및 설정
+global.ReadableStream = require("stream/web").ReadableStream;
 const { Client, GatewayIntentBits, Partials } = require("discord.js");
 const { token } = require("./config.json");
 const client = new Client({
